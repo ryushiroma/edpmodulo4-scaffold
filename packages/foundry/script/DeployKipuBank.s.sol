@@ -2,7 +2,8 @@
 pragma solidity ^0.8.19;
 
 import "forge-std/Script.sol";
-import "../contracts/EdpModulo4.sol";
+import "../src/EdpModulo4.sol";
+
 
 contract DeployKipuBank is Script {
     function run() external {
