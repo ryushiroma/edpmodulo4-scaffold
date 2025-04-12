@@ -47,7 +47,12 @@
     "vercel:yolo": "yarn workspace @se-2/nextjs vercel:yolo",
     "ipfs": "yarn workspace @se-2/nextjs ipfs",
     "vercel:login": "yarn workspace @se-2/nextjs vercel:login",
-    "verify": "yarn hardhat:verify"
+    "verify": "yarn hardhat:verify",
+
+    "foundry:anvil": "anvil",
+    "foundry:build": "cd packages/foundry && forge build",
+    "foundry:test": "cd packages/foundry && forge test",
+    "foundry:deploy": "cd packages/foundry && forge script script/Deploy.s.sol:DeployScript --broadcast --rpc-url http://127.0.0.1:8545 --unlocked"
   },
   "packageManager": "yarn@3.2.3",
   "devDependencies": {
