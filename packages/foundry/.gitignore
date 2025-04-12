@@ -22,6 +22,7 @@ docs/
 
 # Dotenv
 .env
+    
 
 # Coverage e test logs
 coverage/
