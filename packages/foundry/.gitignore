@@ -1,14 +1,32 @@
-# Compiler files
+# Compiler files (Foundry)
 cache/
 out/
 
-# Ignores development broadcast logs
+# Node.js (Scaffold-ETH)
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.pnpm-debug.log
+
+# Ignora logs locais de broadcast
 !/broadcast
 /broadcast/*/31337/
-/broadcast/**/dry-run/
+broadcast/**/dry-run/
 
-# Docs
+# Documentação
 docs/
 
-# Dotenv file
+# VSCode config
+.vscode/
+
+# Dotenv
 .env
+
+# Coverage e test logs
+coverage/
+coverage.json
+
+# MacOS & Windows
+.DS_Store
+Thumbs.db
