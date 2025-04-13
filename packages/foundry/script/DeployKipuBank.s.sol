@@ -7,13 +7,11 @@ import "../src/EdpModulo4.sol";
 
 contract DeployKipuBank is Script {
     function run() external {
-        uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
-        uint256 initialCap = 100 ether;
+    string memory pk = vm.envString("PRIVATE_KEY");
+    uint256 privateKey = vm.parseUint(pk);
 
-        vm.startBroadcast(deployerPrivateKey);
-
-        new KipuBank(initialCap);
-
-        vm.stopBroadcast();
+    vm.startBroadcast(privateKey);
+    new KipuBank(100 ether);
+    vm.stopBroadcast();
     }
 }
