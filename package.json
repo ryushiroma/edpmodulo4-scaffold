@@ -48,7 +48,6 @@
     "ipfs": "yarn workspace @se-2/nextjs ipfs",
     "vercel:login": "yarn workspace @se-2/nextjs vercel:login",
     "verify": "yarn hardhat:verify",
-
     "foundry:anvil": "anvil",
     "foundry:build": "cd packages/foundry && forge build",
     "foundry:test": "cd packages/foundry && forge test",
