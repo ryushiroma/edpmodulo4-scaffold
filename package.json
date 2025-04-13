@@ -53,7 +53,7 @@
     "foundry:test": "cd packages/foundry && forge test",
     "foundry:deploy": "cd packages/foundry && forge script script/Deploy.s.sol:DeployScript --broadcast --rpc-url http://127.0.0.1:8545 --unlocked"
   },
-  "packageManager": "yarn@3.2.3",
+  "packageManager": "yarn@1.22.22",
   "devDependencies": {
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10"
